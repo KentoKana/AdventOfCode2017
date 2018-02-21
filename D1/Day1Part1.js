@@ -60,38 +60,3 @@ console.log(compareInt(intArray))
 // console.log(splitNum);
 
 //creates an array, where each 'digit' is an array item (of string data type).
-splitString = list =>{
-	let array = list.split('');
-	return array;
-}
-
-let stringArray = splitString(num);
-
-//takes numArray
-toInt = someArray =>{
-	var array = [];
-	for(i=0;i<someArray.length;i++){
-		var integer = parseInt(someArray[i]);
-		array[i] = integer;
-	}
-	return array;
-}
-
-let intArray = toInt(stringArray);
-
-//checks to see if the number next to it is the same. 
-//If it is the same, then adds that number to the counter.
-//appends last item of the array to the beginning of the array to create a 'loop'
-compareInt = someIntArray =>{
-	let counter = 0
-	intArray.unshift(intArray[intArray.length-1]);
-
-	for(i=0;i<someIntArray.length-1;i++){
-		if(someIntArray[i] === someIntArray[i+1]){
-			counter += someIntArray[i];
-		}
-	}
-	return counter;
-}
-
-console.log(compareInt(intArray))

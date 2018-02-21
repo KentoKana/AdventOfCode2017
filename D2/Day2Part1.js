@@ -23,7 +23,6 @@ var intArray = toInt();
 checkSum =(someArray) =>{
 	let maxValue;
 	let minValue;
-	let array = [];
 	var counter = 0;
 	for(i=0;i<someArray.length;i++){
 			maxValue = Math.max(...someArray[i]);

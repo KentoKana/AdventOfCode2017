@@ -15,8 +15,7 @@ toInt=()=>{
 	return array;
 }
 var numArray = toInt();
-
-
+//---------------------------------------------------------------------------------------//
 
 checkSum =someArray=>{
 	var counter = 0;
@@ -36,8 +35,6 @@ checkSum =someArray=>{
 					//If it is, flip the denominator and the numerator to get a whole number as a quotient.
 					if((someArray[i][j]/someArray[i][k])%1 === 0){
 						counter += someArray[i][j]/someArray[i][k];
-					} else{
-						counter += someArray[i][k]/someArray[i][j];
 					}
 				}
 			}

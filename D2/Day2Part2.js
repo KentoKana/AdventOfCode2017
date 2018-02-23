@@ -32,7 +32,6 @@ checkSum =someArray=>{
 				} else if(someArray[i][j]%someArray[i][k] === 0){
 
 					//checks whether the quotient between two items is a float.
-					//If it is, flip the denominator and the numerator to get a whole number as a quotient.
 					if((someArray[i][j]/someArray[i][k])%1 === 0){
 						counter += someArray[i][j]/someArray[i][k];
 					}
